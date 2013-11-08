@@ -23,13 +23,13 @@ app.use(express.methodOverride());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
-mongoose.connect('mongodb://localhost/phish');
-var 13FallTour = mongoose.model('13FallTour', { date: String, venue: String, address1: String, address2: String, phone: Number, showtime: Number });
-
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
+
+mongoose.connect('mongodb://localhost/phish');
+
 
 app.get('/', routes.index);
 app.get('/users', user.list);

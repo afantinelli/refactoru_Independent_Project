@@ -5,6 +5,9 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     block content
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
 
 #accordion.panel-group
     .panel.panel-default
@@ -12,12 +15,13 @@ html
           h2.panel-title
             a(data-toggle='collapse', data-parent='#accordion', href='#collapseOne')
               | November 13, 2013: Thomas & Mack Center - Las Vegas, NV
-        #collapseOne.panel-collapse.collapse.in
+        #collapseOne.panel-collapse.collapse
           .panel-body
             | Show: 7:30pm <br \>
             | 4505 S Maryland Parkway <br \>
             | Las Vegas, NV 89154 <br \>
-            | (702) 895-3761
+            | (702) 895-3761 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location=\'#vegas\'')
       .panel.panel-default
         .panel-heading
           h2.panel-title
@@ -28,7 +32,8 @@ html
             | Show: 7:00pm <br \>
             | 3200 Decker Lake Drive <br \>
             | West Valley City, UT 84119 <br \>
-            | (801) 988-8800
+            | (801) 988-8800 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-11-14\'')
       .panel.panel-default
         .panel-heading
           h2.panel-title
@@ -39,19 +44,21 @@ html
             | Show: 7:30pm <br \>
             | 1000 Chopper Circle <br \>
             | Denver, CO 80204 <br \>
-            | (303) 405-1100
-#accordion.panel-group
+            | (303) 405-1100 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-11-16\'')
+
     .panel.panel-default
         .panel-heading
           h2.panel-title
             a(data-toggle='collapse', data-parent='#accordion', href='#collapseFour')
               | November 17, 2013: McNichols Arena - Denver, CO
-        #collapseFour.panel-collapse.collapse.in
+        #collapseFour.panel-collapse.collapse
           .panel-body
             | Show: 7:30pm <br \>
             | 1000 Chopper Circle <br \>
             | Denver, CO 80204 <br \>
-            | (303) 405-1100
+            | (303) 405-1100 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-11-17\'')
       .panel.panel-default
         .panel-heading
           h2.panel-title
@@ -62,7 +69,8 @@ html
             | Show: 7:00pm <br \>
             | 1800 South First Street <br \>
             | Champaign, IL 61820 <br \>
-            | (217) 333-5000
+            | (217) 333-5000 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-11-19\'')
       .panel.panel-default
         .panel-heading
           h2.panel-title
@@ -73,19 +81,21 @@ html
             | Show: 7:30pm <br \>
             | 1000 Coliseum Drive <br \>
             | Hampton, VA 23666 <br \>
-            | (757) 838-5650
-#accordion.panel-group
+            | (757) 838-5650 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-11-21\'')
+
     .panel.panel-default
         .panel-heading
           h2.panel-title
             a(data-toggle='collapse', data-parent='#accordion', href='#collapseSeven')
               | November 22, 2013: Hampton Coliseum - Hampton, VA
-        #collapseSeven.panel-collapse.collapse.in
+        #collapseSeven.panel-collapse.collapse
           .panel-body
             | Show: 7:30pm <br \>
             | 1000 Coliseum Drive <br \>
             | Hampton, VA 23666 <br \>
-            | (757) 838-5650
+            | (757) 838-5650 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-11-22\'')
       .panel.panel-default
         .panel-heading
           h2.panel-title
@@ -96,7 +106,8 @@ html
             | Show: 7:30pm <br \>
             | 2825 University Parkway <br \>
             | Winston-Salem, NC 27105 <br \>
-            | (336) 727-2978
+            | (336) 727-2978 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-11-23\'')
       .panel.panel-default
         .panel-heading
           h2.panel-title
@@ -107,186 +118,203 @@ html
             | Show: 7:30pm <br \>
             | 1 Civic Center Plaza <br \>
             | Hartford, CT 06120 <br \>
-            | (860) 249-6333
-#accordion.panel-group
+            | (860) 249-6333 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-11-26\'')
+
     .panel.panel-default
         .panel-heading
           h2.panel-title
             a(data-toggle='collapse', data-parent='#accordion', href='#collapseTen')
-              | November 28, 2013: Worscester Centrum Centre - Worcester, MA
-        #collapseTen.panel-collapse.collapse.in
+              | November 28, 2013: Worcester Centrum Centre - Worcester, MA
+        #collapseTen.panel-collapse.collapse
           .panel-body
             | Show: 7:30pm <br \>
             | 50 Foster Street <br \>
             | Worcester, MA 01608 <br \>
-            | (508) 755-6800
+            | (508) 755-6800 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-11-28\'')
       .panel.panel-default
         .panel-heading
           h2.panel-title
             a(data-toggle='collapse', data-parent='#accordion', href='#collapseEleven')
-              | November 29, 2013: Worscester Centrum Centre - Worcester, MA
+              | November 29, 2013: Worcester Centrum Centre - Worcester, MA
         #collapseEleven.panel-collapse.collapse
           .panel-body
             | Show: 7:30pm <br \>
             | 50 Foster Street <br \>
             | Worcester, MA 01608 <br \>
-            | (508) 755-6800
+            | (508) 755-6800 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-11-29\'')
       .panel.panel-default
         .panel-heading
           h2.panel-title
             a(data-toggle='collapse', data-parent='#accordion', href='#collapseTwelve')
-              | November 30, 2013: Worscester Centrum Centre - Worcester, MA
+              | November 30, 2013: Worcester Centrum Centre - Worcester, MA
         #collapseTwelve.panel-collapse.collapse
           .panel-body
             | Show: 7:30pm <br \>
             | 50 Foster Street <br \>
             | Worcester, MA 01608 <br \>
-            | (508) 755-6800
-            #accordion.panel-group
+            | (508) 755-6800 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-11-30\'')
+
     .panel.panel-default
         .panel-heading
           h2.panel-title
-            a(data-toggle='collapse', data-parent='#accordion', href='#collapseSeven')
+            a(data-toggle='collapse', data-parent='#accordion', href='#collapseThirteen')
               | December 2, 2013: CoreStates Spectrum - Philadelphia, PA
-        #collapseSeven.panel-collapse.collapse.in
+        #collapseThirteen.panel-collapse.collapse
           .panel-body
             | Show: 7:30pm <br \>
             | 3601 S Broad Street <br \>
             | Philadelphia, PA 19148 <br \>
-            | (215) 336-3600
+            | (215) 336-3600 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-12-02\'')
       .panel.panel-default
         .panel-heading
           h2.panel-title
-            a(data-toggle='collapse', data-parent='#accordion', href='#collapseEight')
+            a(data-toggle='collapse', data-parent='#accordion', href='#collapseFourteen')
               | December 3, 2013: CoreStates Spectrum - Philadelphia, PA
-        #collapseEight.panel-collapse.collapse
+        #collapseFourteen.panel-collapse.collapse
           .panel-body
             | Show: 7:30pm <br \>
             | 3601 S Broad Street <br \>
             | Philadelphia, PA 19148 <br \>
-            | (215) 336-3600
+            | (215) 336-3600 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-12-03\'')
       .panel.panel-default
         .panel-heading
           h2.panel-title
-            a(data-toggle='collapse', data-parent='#accordion', href='#collapseThree')
+            a(data-toggle='collapse', data-parent='#accordion', href='#collapseFifteen')
               | December 5, 2013: CSU Convocation Center - Cleveland, OH
-        #collapseThree.panel-collapse.collapse
+        #collapseFifteen.panel-collapse.collapse
           .panel-body
             | Show: 7:00pm <br \>
             | 2000 Prospect Avenue <br \>
             | Cleveland, OH 44115 <br \>
-            | (216) 687-9292
-            #accordion.panel-group
+            | (216) 687-9292 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-12-05\'')
+
     .panel.panel-default
         .panel-heading
           h2.panel-title
-            a(data-toggle='collapse', data-parent='#accordion', href='#collapseSeven')
+            a(data-toggle='collapse', data-parent='#accordion', href='#collapseSixteen')
               | December 6, 2013: The Palace of Auburn Hills - Auburn Hills, MI
-        #collapseSeven.panel-collapse.collapse.in
+        #collapseSixteen.panel-collapse.collapse
           .panel-body
             | Show: 7:30pm <br \>
             | 6 Championship Drive <br \>
             | Auburn Hills, MI 48326 <br \>
-            | (248) 377-0100
+            | (248) 377-0100 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-12-06\'')
       .panel.panel-default
         .panel-heading
           h2.panel-title
-            a(data-toggle='collapse', data-parent='#accordion', href='#collapseEight')
+            a(data-toggle='collapse', data-parent='#accordion', href='#collapseSeventeen')
               | December 7, 2013: Ervin J. Nutter Center - Dayton, OH
-        #collapseEight.panel-collapse.collapse
+        #collapseSeventeen.panel-collapse.collapse
           .panel-body
             | Show: 7:30pm <br \>
             | 3640 Colonel Glenn Hwy #430 <br \>
             | Dayton, OH 45435 <br \>
-            | (937) 775-3498
+            | (937) 775-3498 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-12-07\'')
       .panel.panel-default
         .panel-heading
           h2.panel-title
-            a(data-toggle='collapse', data-parent='#accordion', href='#collapseThree')
+            a(data-toggle='collapse', data-parent='#accordion', href='#collapseEighteen')
               | December 9, 2013: Bryce Jordan Center - State College, PA
-        #collapseThree.panel-collapse.collapse
+        #collapseEighteen.panel-collapse.collapse
           .panel-body
             | Show: 7:30pm <br \>
             | 127 Bryce Jordan Center <br \>
             | University Park, PA 16802 <br \>
-            | (814) 863-5500
-            #accordion.panel-group
+            | (814) 863-5500 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-12-09\'')
+
     .panel.panel-default
         .panel-heading
           h2.panel-title
-            a(data-toggle='collapse', data-parent='#accordion', href='#collapseSeven')
+            a(data-toggle='collapse', data-parent='#accordion', href='#collapseNineteen')
               | December 11, 2013: Rochester War Memorial - Rochester, NY
-        #collapseSeven.panel-collapse.collapse.in
+        #collapseNineteen.panel-collapse.collapse
           .panel-body
             | Show: 7:30pm <br \>
             | 1 War Memorial Square <br \>
             | Rochester, NY 14614 <br \>
-            | (585) 758-5300
+            | (585) 758-5300 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-12-11\'')
       .panel.panel-default
         .panel-heading
           h2.panel-title
-            a(data-toggle='collapse', data-parent='#accordion', href='#collapseEight')
+            a(data-toggle='collapse', data-parent='#accordion', href='#collapseTwenty')
               | December 12, 2013: Pepsi Arena - Albany, NY
-        #collapseEight.panel-collapse.collapse
+        #collapseTwenty.panel-collapse.collapse
           .panel-body
             | Show: 7:30pm <br \>
             | 51 S Pearl Street <br \>
             | Albany, NY 12207 <br \>
-            | (518) 487-2000
+            | (518) 487-2000 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-12-12\'')
       .panel.panel-default
         .panel-heading
           h2.panel-title
-            a(data-toggle='collapse', data-parent='#accordion', href='#collapseThree')
+            a(data-toggle='collapse', data-parent='#accordion', href='#collapseTwentyone')
               | December 13, 2013: Pepsi Arena - Albany, NY
-        #collapseThree.panel-collapse.collapse
+        #collapseTwentyone.panel-collapse.collapse
           .panel-body
             | Show: 7:30pm <br \>
             | 51 S Pearl Street <br \>
             | Albany, NY 12207 <br \>
-            | (518) 487-2000
-#accordion.panel-group
+            | (518) 487-2000 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-12-13\'')
+
     .panel.panel-default
         .panel-heading
           h2.panel-title
-            a(data-toggle='collapse', data-parent='#accordion', href='#collapseTen')
+            a(data-toggle='collapse', data-parent='#accordion', href='#collapseTwentytwo')
               | December 28, 2013: USAir Arena - Landover, MD
-        #collapseTen.panel-collapse.collapse.in
+        #collapseTwentytwo.panel-collapse.collapse
           .panel-body
             | Show: 7:30pm <br \>
             | 1 Harry S Truman Drive <br \>
             | Landover, Maryland 20785 <br \>
-            | (202) 628-3200
+            | (202) 628-3200 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-12-28\'')
       .panel.panel-default
         .panel-heading
           h2.panel-title
-            a(data-toggle='collapse', data-parent='#accordion', href='#collapseEleven')
+            a(data-toggle='collapse', data-parent='#accordion', href='#collapseTwentythree')
               | December 29, 2013: Madison Square Garden - New York, NY
-        #collapseEleven.panel-collapse.collapse
+        #collapseTwentythree.panel-collapse.collapse
           .panel-body
             | Show: 7:30pm <br \>
             | 4 Pennsylvania Plaza <br \>
             | New York, NY 10001 <br \>
-            | (212) 465-6741
+            | (212) 465-6741 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-12-29\'')
       .panel.panel-default
         .panel-heading
           h2.panel-title
-            a(data-toggle='collapse', data-parent='#accordion', href='#collapseTwelve')
+            a(data-toggle='collapse', data-parent='#accordion', href='#collapseTwentyfour')
               | December 30, 2013: Madison Square Garden - New York, NY
-        #collapseTwelve.panel-collapse.collapse
+        #collapseTwentyfour.panel-collapse.collapse
           .panel-body
             | Show: 7:30pm <br \>
             | 4 Pennsylvania Plaza <br \>
             | New York, NY 10001 <br \>
-            | (212) 465-6741
-            #accordion.panel-group
+            | (212) 465-6741 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-12-30\'')
+
     .panel.panel-default
         .panel-heading
           h2.panel-title
-            a(data-toggle='collapse', data-parent='#accordion', href='#collapseSeven')
+            a(data-toggle='collapse', data-parent='#accordion', href='#collapseTwentyfive')
               | December 31, 2013: Madison Square Garden - New York, NY
-        #collapseSeven.panel-collapse.collapse.in
+        #collapseTwentyfive.panel-collapse.collapse
           .panel-body
             | Show: 8:00pm <br \>
             | 4 Pennsylvania Plaza <br \>
             | New York, NY 10001 <br \>
-            | (212) 465-6741
+            | (212) 465-6741 <br \>
+            input(type='BUTTON', value='More Info', onclick='window.location.href=\'http://phish.net/setlists/?d=1997-12-31\'')
