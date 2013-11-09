@@ -31,8 +31,33 @@ if ('development' == app.get('env')) {
 mongoose.connect('mongodb://localhost/phish');
 
 
-app.get('/', routes.index);
-app.get('/users', user.list);
+//app.get('/', routes.index);
+//app.get('/users', user.list);
+
+app.get('/', function(req, res){
+  res.render('index.jade', { title: 'Phish 2013 Fall Tour Travel' });
+});
+
+app.get('/layout', function(req, res){
+  res.render('index.jade', { title: 'Phish 2013 Fall Tour Travel' });
+});
+
+app.get('/vegas', function(req, res){
+  res.render('vegas.jade', { title: 'vegas' });
+});
+
+app.get('/utah', function(req, res){
+  res.render('utah.jade', { title: 'utah' });
+});
+
+app.get('/denver1', function(req, res){
+  res.render('denver1.jade', { title: 'denver1' });
+});
+
+app.get('/denver2', function(req, res){
+  res.render('denver2.jade', { title: 'denver2' });
+});
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
