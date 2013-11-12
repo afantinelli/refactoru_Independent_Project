@@ -1,0 +1,26 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+
+    button.btn.btn-default.btn-sm(type='button', onclick='window.location.href=\'/vegas\'')
+      span.glyphicon.glyphicon-backward
+        strong|   Thomas & Mack Center
+    .page-header
+      h1
+       left Emergency Services Information 
+        small Las Vegas, NV
+    <br \>
+    input(type='image', src='/images/police.png ', onclick='window.location.href=\'https://maps.google.com/maps?near=Thomas+%26+Mack+Center+%4036.104924,-115.144252&geocode=&q=police&vps=1&f=li&sll=36.10509,-115.14425&sspn=0.006701,0.015943&vpsrc=1&ie=UTF8&hq=police&hnear=\'')
+    <br \>
+    input(type='image', src='/images/hospital.png ', onclick='window.location.href=\'https://maps.google.com/maps?q=hospital&sll=36.10509,-115.14425&sspn=0.006701,0.015943&near=Thomas+%26+Mack+Center+%4036.104924,-115.144252&hq=hospital&t=m&z=13\'')
+    <br \>
+    input(type='image', src='/images/fire.png ', onclick='window.location.href=\'https://maps.google.com/maps?near=Thomas+%26+Mack+Center+%4036.104924,-115.144252&geocode=&q=fire+department&vps=1&f=li&sll=36.10509,-115.14425&sspn=0.006701,0.015943&vpsrc=1&ie=UTF8&hq=fire+department&hnear=\'')
+    <br \>
+    input(type='image', src='/images/towtruck.png ', onclick='window.location.href=\'https://maps.google.com/maps?near=Thomas+%26+Mack+Center+%4036.104924,-115.144252&geocode=&q=towing&vps=1&f=li&sll=36.10509,-115.14425&sspn=0.006701,0.015943&vpsrc=1&ie=UTF8&hq=towing&hnear=\'')

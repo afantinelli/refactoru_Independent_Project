@@ -30,7 +30,6 @@ if ('development' == app.get('env')) {
 
 mongoose.connect('mongodb://localhost/phish');
 
-
 //app.get('/', routes.index);
 //app.get('/users', user.list);
 
@@ -42,8 +41,32 @@ app.get('/layout', function(req, res){
   res.render('index.jade', { title: 'Phish 2013 Fall Tour Travel' });
 });
 
+app.get('/emergency', function(req, res){
+  res.render('emergency.jade', { title: 'emergency' });
+});
+
+app.get('/transportation', function(req, res){
+  res.render('transportation.jade', { title: 'transportation' });
+});
+
+app.get('/band', function(req, res){
+  res.render('band.jade', { title: 'band' });
+});
+
+app.get('/pets', function(req, res){
+  res.render('pets.jade', { title: 'pets' });
+});
+
 app.get('/vegas', function(req, res){
   res.render('vegas.jade', { title: 'vegas' });
+});
+
+app.get('/parkingvegas', function(req, res){
+  res.render('parkingvegas.jade', { title: 'parkingvegas' });
+});
+
+app.get('/seatingvegas', function(req, res){
+  res.render('seatingvegas.jade', { title: 'seatingvegas' });
 });
 
 app.get('/utah', function(req, res){
@@ -57,6 +80,7 @@ app.get('/denver1', function(req, res){
 app.get('/denver2', function(req, res){
   res.render('denver2.jade', { title: 'denver2' });
 });
+
 
 
 http.createServer(app).listen(app.get('port'), function(){

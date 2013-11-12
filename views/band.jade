@@ -1,0 +1,30 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+
+    button.btn.btn-default.btn-sm(type='button', onclick='window.location.href=\'/layout\'')
+      span.glyphicon.glyphicon-backward
+        strong|   Tour Dates
+    .page-header
+      h1
+       left Band Links  
+        small Phish
+    <br \>
+    input(type='image', src='/images/facebook.png ', onclick='window.location.href=\'https://www.facebook.com/phish\'')
+    <br \>
+    input(type='image', src='/images/twitter.png ', onclick='window.location.href=\'https://twitter.com/phish\'')
+    <br \>
+    input(type='image', src='/images/youtube.png ', onclick='window.location.href=\'http://www.youtube.com/user/phish\'')
+    <br \>
+    input(type='image', src='/images/livephish.png ', onclick='window.location.href=\'http://livephish.com/\'')
+    <br \>
+    input(type='image', src='/images/waterwheel.png ', onclick='window.location.href=\'http://phish.com/waterwheel/\'')
+    <br \>
+    input(type='image', src='/images/phishnet.png ', onclick='window.location.href=\'http://phish.net/\'')
