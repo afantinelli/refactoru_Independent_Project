@@ -1,0 +1,26 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+
+    button.btn.btn-default.btn-sm(type='button', onclick='window.location.href=\'/vegas\'')
+      span.glyphicon.glyphicon-backward
+        strong|   Thomas & Mack Center
+    .page-header
+      h1 
+        left Grocery Stores near  
+          small Thomas & Mack Center <br \>
+ 
+    iframe(width='640', height='480', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?q=grocery+stores&sll=36.104924,-115.144252&sspn=0.006295,0.006295&near=Thomas+%26+Mack+Center,+4505+S+Maryland+Pkwy,+Las+Vegas,+NV+89154&geocode=CRePwY7BiNf6FdzqJgIdxAkj-Skpb_FfVcTIgDEZ7nsctBcGDg&gl=us&dq=thomas+%26+mack+center+capacity+loc:+Boulder,+CO&hq=grocery+stores&t=m&ie=UTF8&hnear=&ll=36.109935,-115.14513&spn=0.033284,0.054932&z=14&output=embed')
+    br
+    small
+      | View 
+      a(href='https://maps.google.com/maps?q=grocery+stores&sll=36.104924,-115.144252&sspn=0.006295,0.006295&near=Thomas+%26+Mack+Center,+4505+S+Maryland+Pkwy,+Las+Vegas,+NV+89154&geocode=CRePwY7BiNf6FdzqJgIdxAkj-Skpb_FfVcTIgDEZ7nsctBcGDg&gl=us&dq=thomas+%26+mack+center+capacity+loc:+Boulder,+CO&hq=grocery+stores&t=m&ie=UTF8&hnear=&ll=36.109935,-115.14513&spn=0.033284,0.054932&z=14&source=embed', style='color: #0000FF; text-align: left;') Grocery Stores near Thomas & Mack Center
+      |  in a larger map
+

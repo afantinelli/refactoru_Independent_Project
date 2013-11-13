@@ -9,13 +9,13 @@ html
     script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
     script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
 
-    button.btn.btn-default.btn-sm(type='button', onclick='window.location.href=\'/vegas\'')
+    button.btn.btn-default.btn-sm(type='button', onclick='window.location.href=\'/utah\'')
       span.glyphicon.glyphicon-backward
-        strong|   Thomas & Mack Center
+        strong|   The E Center
     .page-header
       h1 
         left Local Weather  
-          small Thomas & Mack Center <br \>
+          small The E Center <br \>
 
     meta(charset='utf-8')
     title Weather
@@ -31,7 +31,7 @@ html
       function initialize() {
       var mapOptions = {
       zoom: 12,
-      center: new google.maps.LatLng(36.10522,-115.144189),
+      center: new google.maps.LatLng(40.702928,-111.950615),
       mapTypeId: google.maps.MapTypeId.ROADMAP
       };
       var map = new google.maps.Map(document.getElementById('map-canvas'),

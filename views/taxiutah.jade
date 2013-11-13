@@ -1,0 +1,26 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+
+    button.btn.btn-default.btn-sm(type='button', onclick='window.location.href=\'/utah\'')
+      span.glyphicon.glyphicon-backward
+        strong|   The E Center
+    .page-header
+      h1 
+        left  Taxi Companies near  
+          small The E Center <br \>
+ 
+    iframe(width='640', height='480', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?near=3200+Decker+Lake+Dr,+West+Valley+City,+UT+84119&geocode=Cbaj9iO42AjPFYITbQId6MRT-SmfCHjeX4tShzEfrQVomYvDNQ&q=taxi&f=l&sll=40.702845,-111.950624&sspn=0.006645,0.015943&ie=UTF8&hq=taxi&hnear=&t=m&ll=40.712134,-111.936607&spn=0.124914,0.219727&z=12&output=embed')
+    br
+    small
+      | View 
+      a(href='https://maps.google.com/maps?near=3200+Decker+Lake+Dr,+West+Valley+City,+UT+84119&geocode=Cbaj9iO42AjPFYITbQId6MRT-SmfCHjeX4tShzEfrQVomYvDNQ&q=taxi&f=l&sll=40.702845,-111.950624&sspn=0.006645,0.015943&ie=UTF8&hq=taxi&hnear=&t=m&ll=40.712134,-111.936607&spn=0.124914,0.219727&z=12&source=embed', style='color: #0000FF; text-align: left;') Taxi Companies near The E Center
+      |  in a larger map
+

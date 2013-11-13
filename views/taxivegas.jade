@@ -1,0 +1,26 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+
+    button.btn.btn-default.btn-sm(type='button', onclick='window.location.href=\'/vegas\'')
+      span.glyphicon.glyphicon-backward
+        strong|   Thomas & Mack Center
+    .page-header
+      h1 
+        left  Taxi Companies near  
+          small Thomas & Mack Center <br \>
+ 
+    iframe(width='640', height='480', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?near=Thomas+%26+Mack+Center+%4036.104924,-115.144252&geocode=&q=taxi&f=l&sll=36.104924,-115.144252&sspn=0.007082,0.015943&ie=UTF8&hq=taxi&hnear=&t=m&ll=36.11985,-115.153713&spn=0.066559,0.109863&z=13&output=embed')
+    br
+    small
+      | View 
+      a(href='https://maps.google.com/maps?near=Thomas+%26+Mack+Center+%4036.104924,-115.144252&geocode=&q=taxi&f=l&sll=36.104924,-115.144252&sspn=0.007082,0.015943&ie=UTF8&hq=taxi&hnear=&t=m&ll=36.11985,-115.153713&spn=0.066559,0.109863&z=13&source=embed', style='color: #0000FF; text-align: left;') Taxi Companies near Thomas & Mack Center
+      |  in a larger map
+

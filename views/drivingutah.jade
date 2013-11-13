@@ -11,7 +11,7 @@ html
       
       var myOptions = {
       zoom: 17,
-      center: new google.maps.LatLng(36.10522,-115.144189),
+      center: new google.maps.LatLng(40.702928,-111.950615),
       mapTypeId: google.maps.MapTypeId.ROADMAP
       };
       // Draw the map
@@ -80,9 +80,9 @@ html
       margin-top: 10px;
       }
   body
-    button.btn.btn-default.btn-sm(type='button', onclick='window.location.href=\'/vegas\'')
+    button.btn.btn-default.btn-sm(type='button', onclick='window.location.href=\'/utah\'')
       span.glyphicon.glyphicon-backward
-        strong|   << Thomas & Mack Center
+        strong|   << The E Center
     h1 Driving Directions
     form#calculate-route(name='calculate-route', action='#', method='get')
       label(for='from') From:
@@ -90,8 +90,8 @@ html
       a#from-link(href='#') My Current Location
       br
       label(for='to') To:
-      input#to(type='text', name='to', required='required', placeholder='Thomas & Mack Center', size='30')
-      a#to-link(href='https://maps.google.com/maps?q=36.10522,-115.144189&num=1&t=m&z=16&iwloc=A') Get my position
+      input#to(type='text', name='to', required='required', placeholder='The E Center', size='30')
+      a#to-link(href='https://maps.google.com/maps?q=40.702928,-111.950615&num=1&t=m&z=16&iwloc=A') Get my position
       br
       input(type='submit')
       input(type='reset')
