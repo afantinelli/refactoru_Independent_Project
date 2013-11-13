@@ -1,0 +1,30 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+
+    button.btn.btn-default.btn-sm(type='button', onclick='window.location.href=\'/pets\'')
+      span.glyphicon.glyphicon-backward
+        strong|   Pets
+    .page-header
+      h1 
+        left Pet Boarding near  
+          small Thomas & Mack Center <br \>
+ 
+iframe(width='640', height='480', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?near=Thomas+%26+Mack+Center+%4036.104924,-115.144252&geocode=&q=pet+boarding&f=l&sll=36.10509,-115.14425&sspn=0.006701,0.015943&ie=UTF8&hq=pet+boarding&hnear=&t=m&ll=36.140093,-115.180664&spn=0.266169,0.439453&z=11&output=embed')
+  br
+    small
+      a(href='https://maps.google.com/maps?near=Thomas+%26+Mack+Center+%4036.104924,-115.144252&geocode=&q=pet+boarding&f=l&sll=36.10509,-115.14425&sspn=0.006701,0.015943&ie=UTF8&hq=pet+boarding&hnear=&t=m&ll=36.140093,-115.180664&spn=0.266169,0.439453&z=11&source=embed', style='color: #0000FF; text-align: left;') View Larger Map
+
+    br
+    small
+      | View 
+      a(href='https://maps.google.com/maps?near=Thomas+%26+Mack+Center+%4036.104924,-115.144252&geocode=&q=pet+boarding&f=l&sll=36.10509,-115.14425&sspn=0.006701,0.015943&ie=UTF8&hq=pet+boarding&hnear=&t=m&ll=36.140093,-115.180664&spn=0.266169,0.439453&z=11&source=embed', style='color: #0000FF; text-align: left;')  Pet Boarding near Thomas & Mack Center
+      |  in a larger map
+

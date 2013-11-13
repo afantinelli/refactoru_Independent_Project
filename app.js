@@ -69,6 +69,30 @@ app.get('/seatingvegas', function(req, res){
   res.render('seatingvegas.jade', { title: 'seatingvegas' });
 });
 
+app.get('/drivingvegas', function(req, res){
+  res.render('drivingvegas.jade', { title: 'drivingvegas' });
+});
+
+app.get('/gasvegas', function(req, res){
+  res.render('gasvegas.jade', { title: 'gasvegas' });
+});
+
+app.get('/weathervegas', function(req, res){
+  res.render('weathervegas.jade', { title: 'weathervegas' });
+});
+
+app.get('/vetvegas', function(req, res){
+  res.render('vetvegas.jade', { title: 'vetvegas' });
+});
+
+app.get('/petstorevegas', function(req, res){
+  res.render('petstorevegas.jade', { title: 'petstorevegas' });
+});
+
+app.get('/petboardingvegas', function(req, res){
+  res.render('petboardingvegas.jade', { title: 'petboardingvegas' });
+});
+
 app.get('/utah', function(req, res){
   res.render('utah.jade', { title: 'utah' });
 });
