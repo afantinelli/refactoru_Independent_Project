@@ -1,0 +1,26 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+
+    button.btn.btn-default.btn-sm(type='button', onclick='window.location.href=\'/champaign\'')
+      span.glyphicon.glyphicon-backward
+        strong|   Assembly Hall
+    .page-header
+      h1 
+        left Gas Stations near  
+          small Assembly Hall <br \>
+ 
+    iframe(width='640', height='480', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?near=State+Farm+Center,+1800+S+1st+St,+Champaign,+IL+61820&geocode=CXPVoUkXm_ZLFc7RYwIdaqC9-ikDvZ3-JdcMiDGcDQokC5L48g&q=gas+station&f=l&gl=us&sll=40.096606,-88.2359&sspn=0.01341,0.032079&ie=UTF8&hq=gas+station&hnear=&t=m&ll=40.110376,-88.230858&spn=0.126036,0.219727&z=12&output=embed')
+    br
+    small
+      | View 
+      a(href='https://maps.google.com/maps?near=State+Farm+Center,+1800+S+1st+St,+Champaign,+IL+61820&geocode=CXPVoUkXm_ZLFc7RYwIdaqC9-ikDvZ3-JdcMiDGcDQokC5L48g&q=gas+station&f=l&gl=us&sll=40.096606,-88.2359&sspn=0.01341,0.032079&ie=UTF8&hq=gas+station&hnear=&t=m&ll=40.110376,-88.230858&spn=0.126036,0.219727&z=12&source=embed', style='color: #0000FF; text-align: left;') Gas Stations near Assembly Hall
+      |  in a larger map
+

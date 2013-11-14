@@ -1,0 +1,26 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+
+    button.btn.btn-danger.btn-sm(type='button', onclick='window.location.href=\'/emergencychampaign\'')
+      span.glyphicon.glyphicon-backward
+        strong|   Emergency
+    .page-header
+      h1 
+        left  Towing Services near  
+          small Assembly Hall <br \>
+ 
+    iframe(width='640', height='480', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?near=State+Farm+Center,+1800+S+1st+St,+Champaign,+IL+61820&geocode=CXPVoUkXm_ZLFc7RYwIdaqC9-ikDvZ3-JdcMiDGcDQokC5L48g&q=towing+services&f=l&gl=us&sll=40.096606,-88.2359&sspn=0.01341,0.032079&ie=UTF8&hq=towing+services&hnear=&t=m&ll=40.058103,-88.283386&spn=0.504531,0.878906&z=10&output=embed')
+    br
+    small
+      | View 
+      a(href='https://maps.google.com/maps?near=State+Farm+Center,+1800+S+1st+St,+Champaign,+IL+61820&geocode=CXPVoUkXm_ZLFc7RYwIdaqC9-ikDvZ3-JdcMiDGcDQokC5L48g&q=towing+services&f=l&gl=us&sll=40.096606,-88.2359&sspn=0.01341,0.032079&ie=UTF8&hq=towing+services&hnear=&t=m&ll=40.058103,-88.283386&spn=0.504531,0.878906&z=10&source=embed', style='color: #0000FF; text-align: left;') Towing Services near Assembly Hall
+      |  in a larger map
+
