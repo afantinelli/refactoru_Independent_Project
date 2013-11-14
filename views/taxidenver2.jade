@@ -1,0 +1,26 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+
+    button.btn.btn-default.btn-sm(type='button', onclick='window.location.href=\'/denver2\'')
+      span.glyphicon.glyphicon-backward
+        strong|   McNichols Arena
+    .page-header
+      h1 
+        left  Taxi Companies near  
+          small McNichols Arena <br \>
+ 
+    iframe(width='640', height='480', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?near=1000+Chopper+Cir,+Denver,+CO+80204&geocode=CXx0L1CZuJADFcaDXgIdobW9-SkRTEFtx3hshzH2sYGwuNY7UA&q=taxi&f=l&gl=us&sll=39.748658,-105.007603&sspn=0.013479,0.031886&ie=UTF8&hq=taxi&hnear=&t=m&ll=39.721976,-104.898834&spn=0.126753,0.219727&z=12&output=embed')
+    br
+    small
+      | View 
+      a(href='https://maps.google.com/maps?near=1000+Chopper+Cir,+Denver,+CO+80204&geocode=CXx0L1CZuJADFcaDXgIdobW9-SkRTEFtx3hshzH2sYGwuNY7UA&q=taxi&f=l&gl=us&sll=39.748658,-105.007603&sspn=0.013479,0.031886&ie=UTF8&hq=taxi&hnear=&t=m&ll=39.721976,-104.898834&spn=0.126753,0.219727&z=12&source=embed', style='color: #0000FF; text-align: left;') Taxi Companies near McNichols Arena
+      |  in a larger map
+

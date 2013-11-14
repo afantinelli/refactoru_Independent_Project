@@ -1,0 +1,26 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+
+    button.btn.btn-danger.btn-sm(type='button', onclick='window.location.href=\'/emergencydenver2\'')
+      span.glyphicon.glyphicon-backward
+        strong|   Emergency
+    .page-header
+      h1 
+        left  Fire Departments near  
+          small McNichols Arena <br \>
+ 
+    iframe(width='640', height='480', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?near=1000+Chopper+Cir,+Denver,+CO+80204&geocode=CXx0L1CZuJADFcaDXgIdobW9-SkRTEFtx3hshzH2sYGwuNY7UA&q=fire+department&f=l&gl=us&sll=39.748658,-105.007603&sspn=0.013479,0.031886&ie=UTF8&hq=fire+department&hnear=&t=m&ll=39.76936,-105.024834&spn=0.063333,0.109863&z=13&output=embed')
+    br
+    small
+      | View 
+      a(href='https://maps.google.com/maps?near=1000+Chopper+Cir,+Denver,+CO+80204&geocode=CXx0L1CZuJADFcaDXgIdobW9-SkRTEFtx3hshzH2sYGwuNY7UA&q=fire+department&f=l&gl=us&sll=39.748658,-105.007603&sspn=0.013479,0.031886&ie=UTF8&hq=fire+department&hnear=&t=m&ll=39.76936,-105.024834&spn=0.063333,0.109863&z=13&source=embed', style='color: #0000FF; text-align: left;') Fire Departments near McNichols Arena
+      |  in a larger map
+

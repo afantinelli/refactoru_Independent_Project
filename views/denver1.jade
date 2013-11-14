@@ -1,0 +1,87 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+
+    button.btn.btn-default.btn-sm(type='button', onclick='window.location.href=\'/layout\'')
+      span.glyphicon.glyphicon-backward
+        strong|   Tour Dates
+    .page-header
+      h1
+       left November 16, 2013 
+        small Saturday
+      h2
+       left McNichols Arena  
+        small Capacity: 18,007
+      h3
+       left 1000 Chopper Circle  Denver, CO 80204   
+        small Box Office (303) 405-1100
+      h4
+       left Showtime: 7:30pm  Doors: 6:00pm  Lots: 3:30pm  
+        small MST
+
+    a.btn.btn-default.btn-lg(onclick='window.location.href=\'/drivingdenver1\'') <strong \> Directions   
+    a.btn.btn-default.btn-lg(onclick='window.location.href=\'/parkingdenver1\'') <strong \> Parking 
+    a.btn.btn-default.btn-lg(href='http://www.ticketmaster.com/Phish-tickets/artist/748766') <strong \> Tickets <br \>
+
+    <br \>
+    <br \>
+    a.btn.btn-default.btn-lg(onclick='window.location.href=\'/seatingdenver1\'') <strong \> Seating Chart   
+    a.btn.btn-default.btn-lg(href='http://phish.net/setlists/?d=1997-11-16') <strong \> Setlist   
+    a.btn.btn-default.btn-lg(onclick='window.location.href=\'/groceriesdenver1\'') <strong \> Groceries <br \>
+    <br \>
+    <br \>
+    a.btn.btn-default.btn-lg(onclick='window.location.href=\'/gasdenver1\'') <strong \> Gas Stations   
+    a.btn.btn-default.btn-lg(onclick='window.location.href=\'/hotelsdenver1\'') <strong \> Hotel   
+    a.btn.btn-default.btn-lg(onclick='window.location.href=\'/campingdenver1\'') <strong \> Camping <br \>
+    <br \>
+    <br \>
+    a.btn.btn-default.btn-lg(onclick='window.location.href=\'/restaurantsdenver1\'') <strong \> Restaurants   
+    a.btn.btn-default.btn-lg(onclick='window.location.href=\'/barsdenver1\'') <strong \> Bars   
+    a.btn.btn-danger.btn-lg(onclick='window.location.href=\'/emergencydenver1\'') <strong \> Emergency <br \>
+    <br \>
+    <br \>
+    input(type='image', src='/images/airport.png ', onclick='window.location.href=\'http://flydenver.com\'')
+    input(type='image', src='/images/bus.png ', onclick='window.location.href=\'http://www.rtd-denver.com\'')
+    input(type='image', src='/images/taxi.png ', onclick='window.location.href=\'/taxidenver1\'')
+    input(type='image', src='/images/aaa.png ', onclick='window.location.href=\'http://www.aaa.com\'')
+    <br \>
+    input(type='image', src='/images/weather.png ', onclick='window.location.href=\'/weatherdenver1\'')
+    input(type='image', src='/images/pets.png ', onclick='window.location.href=\'/petsdenver1\'')
+    input(type='image', src='/images/band.png ', onclick='window.location.href=\'/band\'')
+    input(type='image', src='/images/cashortrade.png ', onclick='window.location.href=\'http://www.cashortrade.org/phish-tickets\'')
+    <br \>
+    <br \>
+
+
+    .page-footer
+    script(src='http://maps.googleapis.com/maps/api/js?key=AIzaSyBNoEm4x5ykG2VZcEUF6F7Oon4oPmgacmk&sensor=true')
+    script
+      var myCenter=new google.maps.LatLng(39.749071,-105.007564);
+      function initialize()
+      {
+      var mapProp = {
+      center:myCenter,
+      zoom:17,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      var marker=new google.maps.Marker({
+      position:myCenter,
+      });
+      marker.setMap(map);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+  body
+    #googleMap(style='width: 500px; height: 420px;')
+    br
+    small
+      | View 
+      a(href='https://maps.google.com/maps?q=39.749071,-105.007564&num=1&gl=us&ie=UTF8&t=m&ll=39.748642,-105.007582&spn=0.031676,0.054932&z=14&source=embed', style='color: #0000FF; text-align: left;') McNichols Arena
+      |  in a larger map

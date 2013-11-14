@@ -1,0 +1,30 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+
+    button.btn.btn-default.btn-sm(type='button', onclick='window.location.href=\'/denver2\'')
+      span.glyphicon.glyphicon-backward
+        strong|   McNichols Arena
+    .page-header
+      h1
+       left Emergency Services Information 
+        small Denver, CO
+    <br \>
+    h3  Police Department
+    input(type='image', src='/images/police.png ', onclick='window.location.href=\'/policedenver2\'')
+    <br \>
+    h3  Hospital
+    input(type='image', src='/images/hospital.png ', onclick='window.location.href=\'/hospitalsdenver2\'')
+    <br \>
+    h3  Fire Department
+    input(type='image', src='/images/fire.png ', onclick='window.location.href=\'/firedenver2\'')
+    <br \>
+    h3  Towing Services
+    input(type='image', src='/images/towtruck.png ', onclick='window.location.href=\'/towingdenver2\'')
