@@ -281,6 +281,10 @@ app.get('/petsdenver2', function(req, res){
   res.render('petsdenver2.jade', { title: 'petsdenver2' });
 });
 
+app.get('/petschampaign', function(req, res){
+  res.render('petschampaign.jade', { title: 'petschampaign' });
+});
+
 app.get('/petboardingvegas', function(req, res){
   res.render('petboardingvegas.jade', { title: 'petboardingvegas' });
 });
@@ -297,6 +301,10 @@ app.get('/petboardingdenver2', function(req, res){
   res.render('petboardingdenver2.jade', { title: 'petboardingdenver2' });
 });
 
+app.get('/petboardingchampaign', function(req, res){
+  res.render('petboardingchampaign.jade', { title: 'petboardingchampaign' });
+});
+
 app.get('/petstorevegas', function(req, res){
   res.render('petstorevegas.jade', { title: 'petstorevegas' });
 });
@@ -311,6 +319,10 @@ app.get('/petstoredenver1', function(req, res){
 
 app.get('/petstoredenver2', function(req, res){
   res.render('petstoredenver2.jade', { title: 'petstoredenver2' });
+});
+
+app.get('/petstorechampaign', function(req, res){
+  res.render('petstorechampaign.jade', { title: 'petstorechampaign' });
 });
 
 app.get('/policevegas', function(req, res){
@@ -389,6 +401,10 @@ app.get('/taxidenver2', function(req, res){
   res.render('taxidenver2.jade', { title: 'taxidenver2' });
 });
 
+app.get('/taxichampaign', function(req, res){
+  res.render('taxichampaign.jade', { title: 'taxichampaign' });
+});
+
 app.get('/towingvegas', function(req, res){
   res.render('towingvegas.jade', { title: 'towingvegas' });
 });
@@ -427,6 +443,10 @@ app.get('/vetdenver1', function(req, res){
 
 app.get('/vetdenver2', function(req, res){
   res.render('vetdenver2.jade', { title: 'vetdenver2' });
+});
+
+app.get('/vetchampaign', function(req, res){
+  res.render('vetchampaign.jade', { title: 'vetchampaign' });
 });
 
 app.get('/weathervegas', function(req, res){

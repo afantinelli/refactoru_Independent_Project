@@ -1,0 +1,26 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+
+    button.btn.btn-default.btn-sm(type='button', onclick='window.location.href=\'/champaign\'')
+      span.glyphicon.glyphicon-backward
+        strong|   Assembly Hall
+    .page-header
+      h1 
+        left  Taxi Companies near  
+          small Assembly Hall <br \>
+ 
+    iframe(width='640', height='480', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=CXx0L1CZuJADFcaDXgIdobW9-SkRTEFtx3hshzH2sYGwuNY7UA&q=taxi+loc:+40.096655,-88.235861&aq=&sll=39.721976,-104.898834&sspn=0.141804,0.308647&gl=us&ie=UTF8&hq=taxi&hnear=&t=m&ll=40.117334,-88.221931&spn=0.063012,0.109863&z=13&output=embed')
+    br
+    small
+      | View 
+      a(href='https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=CXx0L1CZuJADFcaDXgIdobW9-SkRTEFtx3hshzH2sYGwuNY7UA&q=taxi+loc:+40.096655,-88.235861&aq=&sll=39.721976,-104.898834&sspn=0.141804,0.308647&gl=us&ie=UTF8&hq=taxi&hnear=&t=m&ll=40.117334,-88.221931&spn=0.063012,0.109863&z=13', style='color: #0000FF; text-align: left;') Taxi Companies near Assembly Hall
+      |  in a larger map
+
