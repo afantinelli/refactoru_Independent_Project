@@ -1,0 +1,19 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+
+    button.btn.btn-default.btn-sm(type='button', onclick='window.location.href=\'/hampton2\'')
+      span.glyphicon.glyphicon-backward
+        strong|   Hampton Coliseum
+    .page-header
+      h1 
+        left Parking Map 
+          small Hampton Coliseum <br \>
+            iframe(width='800', height='800', src='http://hamptoncoliseum.s3.amazonaws.com/doc/Hampton_Coliseum_and_HRCC_Disabled_Parking_Map.pdf')

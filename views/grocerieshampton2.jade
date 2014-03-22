@@ -1,0 +1,26 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+
+    button.btn.btn-default.btn-sm(type='button', onclick='window.location.href=\'/hampton2\'')
+      span.glyphicon.glyphicon-backward
+        strong|   Hampton Coliseum
+    .page-header
+      h1 
+        left Grocery Stores near  
+          small Hampton Coliseum <br \>
+ 
+    iframe(width='640', height='480', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?near=1000+Coliseum+Dr,+Hampton,+VA+23666&geocode=CfVZcsDNPPfBFQIbNQIdQ4Ny-ylje16fRoO6iTE0feL1yEmWTQ&q=grocery+stores&f=l&gl=us&sll=37.035344,-76.38133&sspn=0.009198,0.01929&ie=UTF8&hq=grocery+stores&hnear=&t=m&ll=37.034625,-76.38588&spn=0.065776,0.109863&z=13&output=embed')
+    br
+    small
+      | View 
+      a(href='https://maps.google.com/maps?near=1000+Coliseum+Dr,+Hampton,+VA+23666&geocode=CfVZcsDNPPfBFQIbNQIdQ4Ny-ylje16fRoO6iTE0feL1yEmWTQ&q=grocery+stores&f=l&gl=us&sll=37.035344,-76.38133&sspn=0.009198,0.01929&ie=UTF8&hq=grocery+stores&hnear=&t=m&ll=37.034625,-76.38588&spn=0.065776,0.109863&z=13&source=embed', style='color: #0000FF; text-align: left;') Grocery Stores near Hampton Coliseum
+      |  in a larger map
+

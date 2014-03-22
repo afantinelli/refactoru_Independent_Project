@@ -1,0 +1,48 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+
+    button.btn.btn-default.btn-sm(type='button', onclick='window.location.href=\'/hampton2\'')
+      span.glyphicon.glyphicon-backward
+        strong|   Hampton Coliseum
+    .page-header
+      h1 
+        left Local Weather  
+          small Hampton Coliseum <br \>
+
+    meta(charset='utf-8')
+    title Weather
+    style
+      html, body, #map-canvas {
+      width: 80%;
+      height: 90%;
+      margin: 10px;
+      padding: 20px
+      }
+    script(src='https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=weather')
+    script
+      function initialize() {
+      var mapOptions = {
+      zoom: 12,
+      center: new google.maps.LatLng(37.035207,-76.381248),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      var map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+      var weatherLayer = new google.maps.weather.WeatherLayer({
+      temperatureUnits: google.maps.weather.TemperatureUnit.FAHRENHEIT
+      });
+      weatherLayer.setMap(map);
+      var cloudLayer = new google.maps.weather.CloudLayer();
+      cloudLayer.setMap(map);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+  body
+    #map-canvas

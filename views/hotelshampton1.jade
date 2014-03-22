@@ -1,0 +1,26 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+
+    button.btn.btn-default.btn-sm(type='button', onclick='window.location.href=\'/hampton1\'')
+      span.glyphicon.glyphicon-backward
+        strong|   Hampton Coliseum
+    .page-header
+      h1 
+        left  Hotels near  
+          small Hampton Coliseum <br \>
+ 
+    iframe(width='640', height='480', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?near=1000+Coliseum+Dr,+Hampton,+VA+23666&geocode=CfVZcsDNPPfBFQIbNQIdQ4Ny-ylje16fRoO6iTE0feL1yEmWTQ&q=hotels&f=l&gl=us&sll=37.035344,-76.38133&sspn=0.009198,0.019119&ie=UTF8&hq=hotels&hnear=&t=m&ll=37.035344,-76.38133&spn=0.008222,0.013733&z=16&output=embed')
+    br
+    small
+      | View 
+      a(href='https://maps.google.com/maps?near=1000+Coliseum+Dr,+Hampton,+VA+23666&geocode=CfVZcsDNPPfBFQIbNQIdQ4Ny-ylje16fRoO6iTE0feL1yEmWTQ&q=hotels&f=l&gl=us&sll=37.035344,-76.38133&sspn=0.009198,0.019119&ie=UTF8&hq=hotels&hnear=&t=m&ll=37.035344,-76.38133&spn=0.008222,0.013733&z=16&source=embed', style='color: #0000FF; text-align: left;') Hotels near Hampton Coliseum
+      |  in a larger map
+
